@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/birt1"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="200sp"
+        android:layout_height="300sp"
+        android:layout_gravity="center"
+        android:layout_margin="30sp"
+        android:padding="30sp"
+        android:src="@drawable/babyimg"/>
+    <!--sp : ScaleIndependent pixel - views
+    dp : Density Scale Independent pixel -viewgroup
+    gravity : specifies how child views are positioned
+    margin : create space  outside the views border
+    padding: create space inside the  views border
+    id : specify the id  of view-->
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/happy"
+          android:gravity="center"
+          android:textSize="45sp"
+          android:layout_marginTop="45sp"
+          android:textColor="#E91E63"
+          android:textStyle="bold"/>
+
+</LinearLayout>

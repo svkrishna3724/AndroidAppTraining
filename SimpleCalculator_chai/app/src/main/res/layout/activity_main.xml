@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/simple_calculator"
+       android:gravity="center"
+       android:layout_marginTop="30sp"
+       android:textSize="34sp"
+       android:textStyle="bold"
+       android:textColor="#B917D5"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter first Number"
+        android:inputType="number"
+        android:layout_marginTop="30sp"
+        android:textSize="24sp"
+        android:id="@+id/edit1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter second Number"
+        android:inputType="number"
+        android:layout_marginTop="30sp"
+        android:textSize="24sp"
+        android:id="@+id/edit2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30sp"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10sp"
+            android:text="+"
+            android:onClick="plus"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10sp"
+            android:text="-"
+            android:onClick="minus"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10sp"
+            android:text="-"
+            android:onClick="multi"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10sp"
+            android:text="/"
+            android:onClick="division"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+    </LinearLayout>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Result"
+          android:gravity="center"
+          android:textSize="34sp"
+          android:layout_marginTop="30sp"
+          android:id="@+id/text1"
+          android:textColor="#FF9800"
+          android:textStyle="bold"/>
+</LinearLayout>
